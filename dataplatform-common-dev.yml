@@ -12,6 +12,7 @@ spring:
       #   -127.0.0.1:7003
       #   -127.0.0.1:7004
       host: 10.8.16.78:6379
+      port: 6379
       password:
       maxIdle:
       minIdle:
