@@ -1,5 +1,7 @@
 server:
   port: 8084
+  servlet:
+    context-path: /
 hello:
   service:
     version: 1.0.0
