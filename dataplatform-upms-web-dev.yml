@@ -1,7 +1,25 @@
+spring:
+  application:
+    name: clife-dataplatform-upms-web
+  redis:
+    cache:
+      # nodes: -127.0.0.1:7001
+      #   -127.0.0.1:7002
+      #   -127.0.0.1:7003
+      #   -127.0.0.1:7004
+      host: 10.8.16.78:6379
+      #host: 127.0.0.1:6379
+      port: 6379
+      password:
+      maxIdle:
+      minIdle:
+      maxTotal:
+      maxWaitMillis: 5000
+    database: 0
+
+
 server:
   port: 8084
-  servlet:
-    context-path: /
 hello:
   service:
     version: 1.0.0
@@ -9,10 +27,12 @@ dubbo:
   application:
     id: clife-dataplatform-upms-web-id
     name: clife-dataplatform-upms-web-name
+    qos-enable: true
+    qos-port: 22223
   registry:
     protocol: zookeeper
     address: 10.8.16.79:2181
-    #address: 127.0.0.1:2181
+    # address: 127.0.0.1:2181
     id: lin-registry-1
 management:
   endpoint:
