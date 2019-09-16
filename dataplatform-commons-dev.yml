@@ -13,8 +13,3 @@ spring:
       maxWaitMillis: 5000
     database: 0
 
-dubbo:
-  registry:
-    protocol: zookeeper
-    #公司zk
-    address: 10.8.16.79:2181
