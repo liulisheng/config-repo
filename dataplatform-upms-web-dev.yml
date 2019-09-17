@@ -31,8 +31,8 @@ dubbo:
     qos-port: 22223
   registry:
     protocol: zookeeper
-    address: 10.8.16.79:2181
-    # address: 127.0.0.1:2181
+    #address: 10.8.16.79:2181
+    address: 127.0.0.1:2181
     id: lin-registry-1
 management:
   endpoint:
